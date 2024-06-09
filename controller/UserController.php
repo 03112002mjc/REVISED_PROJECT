@@ -28,7 +28,7 @@ class UserController {
                 $this->logout();
                 break;
             default:
-                // Handle other actions or show an error
+                echo "Error!";
                 break;
         }
     }
@@ -46,7 +46,7 @@ class UserController {
             $name = $_POST['name'];
             $email = $_POST['email'];
             $role = $_POST['role'];
-            $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+            $password = md5($_POST['password']);
 
             if ($this->model->checkEmailExists($email)) {
                 $errors[] = "Error: An account with this email already exists.";
@@ -56,7 +56,7 @@ class UserController {
                 } else {
                     $errors[] = "Error: Unable to create user.";
                 }
-            }
+            }   
         }
 
         // Fetch roles for the dropdown

@@ -34,7 +34,7 @@ class NoteController {
                 $this->editNote();
                 break;
             default:
-                // Handle other actions or show an error
+                echo "Error!";
                 break;
         }
     }

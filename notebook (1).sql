@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2024 at 04:20 AM
+-- Generation Time: Jun 09, 2024 at 06:16 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,10 +40,9 @@ CREATE TABLE `notes` (
 --
 
 INSERT INTO `notes` (`id`, `user_id`, `title`, `content`, `created_at`) VALUES
-(1, 1, 'C Language', 'C is a general-purpose programming language that has been widely used for over 50 years.\r\n\r\nC is very powerful; it has been used to develop operating systems, databases, applications, etc.\r\n\r\n', '2024-06-09 01:46:29'),
 (2, 1, 'CSS Tutorial', 'CSS is the language we use to style an HTML document.\r\n\r\nCSS describes how HTML elements should be displayed.\r\n\r\nThis tutorial will teach you CSS from basic to advanced.', '2024-06-09 01:47:11'),
 (3, 1, 'Java Tutorial', 'Learn Java\r\nJava is a popular programming language.\r\n\r\nJava is used to develop mobile apps, web apps, desktop apps, games and much more.\r\n\r\n', '2024-06-09 01:47:51'),
-(4, 1, 'PHP Tutorial', 'Learn PHP\r\nPHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.\r\n\r\nPHP is a widely-used, free, and efficient alternative to competitors such as Microsoft\'s ASP.', '2024-06-09 01:48:10'),
+(4, 1, 'PHP Tutorial', 'Learn PHP\r\nPHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.\r\n\r\nPHP is a widely-used, free, and efficient alternative to competitors such as Microsoft\'s ASP. Nice', '2024-06-09 01:48:10'),
 (5, 1, 'JavaScript Tutorial', 'JavaScript is the world\'s most popular programming language.\r\n\r\nJavaScript is the programming language of the Web.\r\n\r\nJavaScript is easy to learn.\r\n\r\nThis tutorial will teach you JavaScript from basic to advanced.', '2024-06-09 01:48:31'),
 (6, 1, 'HTML Tutorial', 'HTML is the standard markup language for Web pages.\r\n\r\nWith HTML you can create your own Website.\r\n\r\nHTML is easy to learn - You will enjoy it!', '2024-06-09 01:48:54');
 
@@ -69,11 +68,11 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`, `created_at`) VALUES
 (1, 'Marc Joseph Cagalitan', 'cramhpesojcagalitan@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'student', '2024-06-09 01:40:18'),
 (2, 'CITE', 'cite@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'admin', '2024-06-09 01:49:33'),
-(3, 'Khient Carabuena', 'carabuena@gmail.com', '$2y$10$T17rxduhmrp.x2rX8Twn7O7A6qjIV7hagL0ycWMUIKhqKFWGUNTCe', 'student', '2024-06-09 02:07:46'),
-(4, 'Cyril Perez', 'perez@gmail.com', '$2y$10$tlueUA9raVgoCew4ZcyaPeFBC/OK4gMWVhlhUA1T6k2h5tZywpSKO', 'student', '2024-06-09 02:08:18'),
-(5, 'Brian Tecling', 'brian@gmail.com', '$2y$10$GhobprGjg4HD2ABipJQY0uR.XM2CSMkcRcsBshoA/AM8aMqgaYNZq', 'student', '2024-06-09 02:08:46'),
-(6, 'Gen Bryle Bernal', 'bernal@gmail.com', '$2y$10$NIpq3Yol0edQFWpjXbApHurIw5GPWNl1kLeQgIfR9bL9pIddIM7IS', 'student', '2024-06-09 02:08:57'),
-(7, 'Marcel Rubin', 'rubin@gmail.com', '$2y$10$..fV3rRdGAKwf4hkZiXPkOOxNEmKZmGJNKXtAinRuWrMPsugLxUZa', 'student', '2024-06-09 02:09:15');
+(10, 'Khient Carabueana', 'carabuena@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'student', '2024-06-09 04:13:35'),
+(11, 'Brian Tecling', 'brian@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'student', '2024-06-09 04:14:24'),
+(12, 'Gen Bryle Bernal', 'bernal@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'student', '2024-06-09 04:14:58'),
+(13, 'Marcel Rubin', 'rubin@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'student', '2024-06-09 04:15:09'),
+(14, 'Cyril Perez', 'perez@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'student', '2024-06-09 04:15:29');
 
 --
 -- Indexes for dumped tables
@@ -107,7 +106,7 @@ ALTER TABLE `notes`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables

@@ -143,6 +143,8 @@ nav ul li a:hover {
 h1 {
     margin-bottom: 20px;
     color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 table {

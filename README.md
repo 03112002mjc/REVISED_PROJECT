@@ -26,8 +26,8 @@
 ##### 
 1. Open ```Google``` or any Web Browser.
 2. Type ```localhost/phpmyadmin/``` to manually create the database.
-3. Click ```New``` and then create a database named ```notebook```, then click the ```Import``` tab above.
-4. When you're done clicking it, import the file named ```notebook(1).sql``` which is attached with the folder you downloaded and extracted in ```C:\xampp\htdocs\```.
+3. Click ```New``` and then click the ```Import``` tab above.
+4. When you're done clicking it, import the file named ```init_database.sql``` which is attached with the folder you downloaded and extracted in ```C:\xampp\htdocs\```.
 5. Then after importing the file, click the ```Import``` button bellow.
 6. Good Job! You're done creating the Database.
 
